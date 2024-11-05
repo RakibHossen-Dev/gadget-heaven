@@ -1,190 +1,207 @@
 [
   {
+    "id": 1,
     "product_title": "Dell Inspiron 15",
     "product_image": "https://i.ibb.co.com/kys3J9j/image.png",
     "category": "Laptops",
     "price": 650.0,
     "description": "15.6-inch laptop with a sleek design and powerful performance for everyday tasks.",
-    "specification": {
-      "display": "15.6 inches, Full HD",
-      "processor": "Intel Core i5",
-      "ram": "8GB",
-      "storage": "256GB SSD",
-      "battery": "42Wh"
-    },
-    "availability": true,
+    "specification": [
+      "15.6 inches, Full HD",
+      "Intel Core i5",
+      "8GB",
+      "256GB SSD",
+      "42Wh"
+    ],
+    "availability": "In Stock",
     "rating": 4.2
   },
   {
+    "id": 2,
     "product_title": "iPhone 14 Pro",
     "product_image": "https://i.ibb.co.com/R7Grxwy/image.png",
     "category": "iPhones",
     "price": 999.0,
     "description": "Apple's latest iPhone with A16 Bionic chip, 5G connectivity, and an impressive camera.",
-    "specification": {
-      "display": "6.1 inches, Super Retina XDR",
-      "processor": "A16 Bionic",
-      "ram": "6GB",
-      "storage": "128GB",
-      "camera": "48MP triple-lens"
-    },
-    "availability": true,
+    "specification": [
+      "6.1 inches, Super Retina XDR",
+      "A16 Bionic",
+      "6GB",
+      "128GB",
+      "48MP triple-lens"
+    ],
+    "availability": "In Stock",
     "rating": 4.8
   },
   {
+    "id": 3,
     "product_title": "Samsung Galaxy S23",
     "product_image": "https://i.ibb.co.com/9wm6pd3/image.png",
     "category": "Phones",
     "price": 899.0,
     "description": "Flagship phone from Samsung with dynamic AMOLED display and advanced camera system.",
-    "specification": {
-      "display": "6.4 inches, Dynamic AMOLED",
-      "processor": "Snapdragon 8 Gen 2",
-      "ram": "8GB",
-      "storage": "256GB",
-      "battery": "5000mAh"
-    },
-    "availability": true,
+    "specification": [
+      "6.4 inches, Dynamic AMOLED",
+      "Snapdragon 8 Gen 2",
+      "8GB",
+      "256GB",
+      "5000mAh"
+    ],
+    "availability": "In Stock",
     "rating": 4.6
   },
   {
+    "id": 4,
     "product_title": "MacBook Air M2",
     "product_image": "https://i.ibb.co.com/Qp7m5qh/image.png",
     "category": "MacBooks",
     "price": 1199.0,
     "description": "Thin and light with M2 chip for enhanced performance and battery life.",
-    "specification": {
-      "display": "13.3 inches, Retina",
-      "processor": "Apple M2",
-      "ram": "8GB",
-      "storage": "256GB SSD",
-      "battery": "18 hours"
-    },
-    "availability": true,
+    "specification": [
+      "13.3 inches, Retina",
+      "Apple M2",
+      "8GB",
+      "256GB SSD",
+      "18 hours"
+    ],
+    "availability": "In Stock",
     "rating": 4.9
   },
   {
+    "id": 5,
     "product_title": "Apple Watch Series 8",
     "product_image": "https://i.ibb.co.com/zJgQSzV/image.png",
     "category": "Smartwatches",
     "price": 399.0,
     "description": "Advanced health-tracking smartwatch with ECG and blood oxygen monitoring.",
-    "specification": {
-      "display": "Always-On Retina",
-      "battery_life": "18 hours",
-      "water_resistance": "50 meters",
-      "connectivity": ["GPS", "WiFi", "Bluetooth"]
-    },
-    "availability": false,
+    "specification": [
+      "Always-On Retina",
+      "18 hours",
+      "50 meters",
+      "GPS",
+      "WiFi",
+      "Bluetooth"
+    ],
+    "availability": "In Stock",
     "rating": 4.7
   },
   {
+    "id": 6,
     "product_title": "Sony WH-1000XM5",
     "product_image": "https://i.ibb.co.com/Nsp3825/image.png",
     "category": "Accessories",
     "price": 349.99,
     "description": "Industry-leading noise-cancelling headphones with up to 30 hours of battery life.",
-    "specification": {
-      "connectivity": "Bluetooth 5.2",
-      "battery_life": "30 hours",
-      "charging": "USB-C",
-      "features": "Noise-cancelling, touch controls"
-    },
-    "availability": true,
+    "specification": [
+      "Bluetooth 5.2",
+      "30 hours",
+      "USB-C",
+      "Noise-cancelling, touch controls"
+    ],
+    "availability": "In Stock",
     "rating": 4.9
   },
   {
+    "id": 7,
     "product_title": "Google Pixel 7",
     "product_image": "https://i.ibb.co.com/x5SV9L2/image.png",
     "category": "Phones",
     "price": 599.0,
     "description": "Pixel phone with Google Tensor chip, amazing camera quality, and pure Android experience.",
-    "specification": {
-      "display": "6.3 inches, OLED",
-      "processor": "Google Tensor G2",
-      "ram": "8GB",
-      "storage": "128GB",
-      "battery": "4355mAh"
-    },
-    "availability": true,
+    "specification": [
+      "6.3 inches, OLED",
+      "Google Tensor G2",
+      "8GB",
+      "128GB",
+      "4355mAh"
+    ],
+    "availability": "In Stock",
     "rating": 4.5
   },
   {
+    "id": 8,
     "product_title": "Samsung Galaxy Watch 5",
     "product_image": "https://i.ibb.co.com/hMWtF49/image.png",
     "category": "Smartwatches",
     "price": 279.99,
     "description": "Smartwatch with fitness tracking and advanced health monitoring features.",
-    "specification": {
-      "display": "AMOLED",
-      "battery_life": "40 hours",
-      "water_resistance": "50 meters",
-      "connectivity": ["Bluetooth", "GPS", "WiFi"]
-    },
-    "availability": true,
+    "specification": [
+      "AMOLED",
+      "40 hours",
+      "50 meters",
+      "Bluetooth",
+      "GPS",
+      "WiFi"
+    ],
+    "availability": "In Stock",
     "rating": 4.3
   },
   {
+    "id": 9,
     "product_title": "Lenovo ThinkPad X1 Carbon",
     "product_image": "https://i.ibb.co.com/5cnBmKQ/image.png",
     "category": "Laptops",
     "price": 1399.0,
     "description": "High-end business laptop with a durable build and top-notch performance.",
-    "specification": {
-      "display": "14 inches, Full HD",
-      "processor": "Intel Core i7",
-      "ram": "16GB",
-      "storage": "512GB SSD",
-      "battery": "57Wh"
-    },
-    "availability": true,
+    "specification": [
+      "14 inches, Full HD",
+      "Intel Core i7",
+      "16GB",
+      "512GB SSD",
+      "57Wh"
+    ],
+    "availability": "In Stock",
     "rating": 4.7
   },
   {
+    "id": 10,
     "product_title": "MacBook Pro M2",
     "product_image": "https://i.ibb.co.com/kcQKGHP/image.png",
     "category": "MacBooks",
     "price": 1999.0,
     "description": "Powerful laptop with M2 chip, ideal for creative professionals.",
-    "specification": {
-      "display": "14 inches, Retina",
-      "processor": "Apple M2",
-      "ram": "16GB",
-      "storage": "512GB SSD",
-      "battery": "20 hours"
-    },
-    "availability": false,
+
+    "specification": [
+      "14 inches, Retina",
+      "Apple M2",
+      "16GB",
+      "512GB SSD",
+      "20 hours"
+    ],
+    "availability": "In Stock",
     "rating": 4.8
   },
   {
+    "id": 11,
     "product_title": "iPhone 13 Mini",
     "product_image": "https://i.ibb.co.com/fX73S9x/image.png",
     "category": "iPhones",
     "price": 699.0,
     "description": "Compact smartphone with powerful features and excellent camera quality.",
-    "specification": {
-      "display": "5.4 inches, Super Retina XDR",
-      "processor": "A15 Bionic",
-      "ram": "4GB",
-      "storage": "128GB",
-      "camera": "12MP dual-lens"
-    },
-    "availability": true,
+    "specification": [
+      "5.4 inches, Super Retina XDR",
+      "A15 Bionic",
+      "4GB",
+      "128GB",
+      "12MP dual-lens"
+    ],
+    "availability": "In Stock",
     "rating": 4.6
   },
   {
+    "id": 12,
     "product_title": "Anker PowerCore 10000",
     "product_image": "https://i.ibb.co.com/RyrRQFd/image.png",
     "category": "Accessories",
     "price": 25.99,
     "description": "Compact and powerful power bank with 10000mAh capacity.",
-    "specification": {
-      "battery_capacity": "10000mAh",
-      "charging_ports": "USB-A",
-      "features": "Fast charging, compact design",
-      "weight": "180g"
-    },
-    "availability": true,
+    "specification": [
+      "10000mAh",
+      "USB-A",
+      "Fast charging, compact design",
+      "180g"
+    ],
+    "availability": "In Stock",
     "rating": 4.8
   }
 ]

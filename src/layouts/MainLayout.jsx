@@ -9,7 +9,7 @@ const MainLayout = () => {
       <Navber></Navber>
       {/* Daynamic section*/}
       <div className="bg-gray-100 py-10">
-        <div className="min-h-[calc(100vh-418px)] w-11/12 mx-auto">
+        <div className="min-h-[calc(100vh-418px)]  ">
           <Outlet></Outlet>
         </div>
       </div>
