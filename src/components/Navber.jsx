@@ -1,7 +1,22 @@
+import { useEffect, useState } from "react";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { MdFavoriteBorder } from "react-icons/md";
 import { Link, NavLink } from "react-router-dom";
+import { getAllCard, getWishList } from "../utils";
 const Navbar = () => {
+  const [card, setCard] = useState([]);
+  useEffect(() => {
+    const addToCard = getAllCard();
+    setCard(addToCard);
+  }, []);
+
+  const [wish, setWish] = useState([]);
+  useEffect(() => {
+    const addToWish = getWishList();
+    setWish(addToWish);
+  }, []);
+
+  // console.log("fgjhfgkjhfhg", card.length);
   return (
     <div className="w-11/12 mx-auto py-4">
       <div className="navbar bg-base-100">
@@ -63,6 +78,18 @@ const Navbar = () => {
               >
                 Dashboard
               </NavLink>
+              <NavLink
+                className={({ isActive }) =>
+                  `${
+                    isActive
+                      ? "border border-violet-500 text-violet-500 py-1 px-4 rounded-md"
+                      : ""
+                  }`
+                }
+                to="/blogs"
+              >
+                Blog
+              </NavLink>
             </ul>
           </div>
           <Link to="/" className=" lg:text-2xl  font-bold">
@@ -76,7 +103,7 @@ const Navbar = () => {
                 `${
                   isActive
                     ? "border border-violet-500 text-violet-500 py-1 px-4 rounded-md"
-                    : ""
+                    : "py-1 px-5"
                 }`
               }
               to="/"
@@ -88,7 +115,7 @@ const Navbar = () => {
                 `${
                   isActive
                     ? "border border-violet-500 text-violet-500 py-1 px-4 rounded-md"
-                    : ""
+                    : "py-1 px-5 "
                 }`
               }
               to="/statistics"
@@ -100,12 +127,24 @@ const Navbar = () => {
                 `${
                   isActive
                     ? "border border-violet-500 text-violet-500 py-1 px-4 rounded-md"
-                    : ""
+                    : "py-1 px-5 "
                 }`
               }
               to="/dashboard"
             >
               Dashboard
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                `${
+                  isActive
+                    ? "border border-violet-500 text-violet-500 py-1 px-4 rounded-md"
+                    : "py-1 px-5"
+                }`
+              }
+              to="/blogs"
+            >
+              Blog
             </NavLink>
           </ul>
         </div>
@@ -138,7 +177,9 @@ const Navbar = () => {
                     d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
                   />
                 </svg>
-                <span className="badge badge-sm indicator-item">0</span>
+                <span className="badge badge-sm indicator-item">
+                  {card.length}
+                </span>
               </div>
             </div>
             <div
@@ -146,7 +187,7 @@ const Navbar = () => {
               className="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow"
             >
               <div className="card-body">
-                <span className="text-lg font-bold">0 Items</span>
+                <span className="text-lg font-bold">{card.length} Items</span>
                 <span className="text-info">Subtotal: $999</span>
                 <div className="card-actions">
                   <button className="btn btn-primary btn-block">
@@ -166,7 +207,9 @@ const Navbar = () => {
               <div className="indicator">
                 <MdFavoriteBorder className="text-2xl" />
 
-                <span className="badge badge-sm indicator-item">0</span>
+                <span className="badge badge-sm indicator-item">
+                  {wish.length}
+                </span>
               </div>
             </div>
             <div
@@ -174,7 +217,7 @@ const Navbar = () => {
               className="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow"
             >
               <div className="card-body">
-                <span className="text-lg font-bold">0 Items</span>
+                <span className="text-lg font-bold">{wish.length} Items</span>
                 <span className="text-info">Subtotal: $999</span>
                 <div className="card-actions">
                   <button className="btn btn-primary btn-block">

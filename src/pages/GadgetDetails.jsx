@@ -2,10 +2,21 @@ import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import { LuShoppingCart } from "react-icons/lu";
 import { MdFavoriteBorder } from "react-icons/md";
+import { addCard, addWhistList, getAllCard } from "../utils";
+import { toast } from "react-toastify";
 
 const GadgetDetails = () => {
   const allGadget = useLoaderData();
-  console.log(allGadget);
+  //   console.log(allGadget);
+
+  const handleAddToCard = (card) => {
+    addCard(card);
+  };
+
+  const handleAddToWhishList = (whishList) => {
+    // console.log("Wish List", whishList);
+    addWhistList(whishList);
+  };
   const { id } = useParams();
   const [gadget, setGadget] = useState({});
   useEffect(() => {
@@ -23,7 +34,8 @@ const GadgetDetails = () => {
     rating,
   } = gadget;
 
-  console.log(specification);
+  //   console.log(specification);
+
   return (
     <div>
       <div className="bg-violet-500 pt-5 pb-40 ">
@@ -91,11 +103,17 @@ const GadgetDetails = () => {
             </div>
           </div>
           <div className="flex items-center gap-3">
-            <button className="flex items-center gap-2 bg-violet-500 py-2 px-6 rounded-full text-white font-medium">
+            <button
+              onClick={() => handleAddToCard(gadget)}
+              className="flex items-center gap-2 bg-violet-500 py-2 px-6 rounded-full text-white font-medium"
+            >
               <p>Add To Card</p>
               <LuShoppingCart />
             </button>
-            <button className="bg-white shadow-sm rounded-full p-2 border text-lg">
+            <button
+              onClick={() => handleAddToWhishList(gadget)}
+              className="bg-white shadow-sm rounded-full p-2 border text-lg"
+            >
               <MdFavoriteBorder />
             </button>
           </div>

@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "title": "The Ultimate Guide to iPhone 15 Features",
+    "author": "Sakib Hossen",
+    "author_image": "https://i.ibb.co.com/wJbvKzj/image.png",
+    "publish_date": "2024-11-01",
+    "category": "Smartphone",
+    "tags": ["Apple", "iPhone", "Smartphone"],
+    "content_preview": "The iPhone 15 takes Apple's smartphone lineup to new heights. This guide covers everything you need to know about the device, including the A16 Bionic chip for powerful performance, enhanced camera features with incredible low-light capabilities, and the Super Retina XDR display that makes images look sharp and vibrant. We'll explore battery improvements, new software updates, and how the iPhone 15 fits into Apple's ecosystem.",
+    "image_url": "https://i.ibb.co.com/6F64WS0/image.png"
+  },
+  {
+    "id": 2,
+    "title": "Is the MacBook Pro 14 Worth the Price?",
+    "author": "Abdur Rhaman",
+    "author_image": "https://i.ibb.co.com/xXC2VDN/image.png",
+    "publish_date": "2024-10-28",
+    "category": "Laptop",
+    "tags": ["Apple", "MacBook", "Laptop"],
+    "content_preview": "Apple's MacBook Pro 14 has sparked plenty of interest with its M2 Pro chip and remarkable Liquid Retina XDR display. But at a premium price, is it the best option for professionals and creatives? In this review, we take a deep dive into its performance for tasks like video editing and programming, compare it to other high-end laptops, and examine its battery life, portability, and unique features to help you decide if the MacBook Pro 14 is the right investment.",
+    "image_url": "https://i.ibb.co.com/SnPJT93/image.png"
+  },
+  {
+    "id": 3,
+    "title": "Samsung Galaxy S23: A Smartphone That Stands Out",
+    "author": "Lacica",
+    "author_image": "https://i.ibb.co.com/r577syK/image.png",
+    "publish_date": "2024-10-15",
+    "category": "Smartphone",
+    "tags": ["Samsung", "Galaxy S23", "Smartphone"],
+    "content_preview": "Samsung's Galaxy S23 has set a new standard for Android smartphones, with a sleek design, powerful hardware, and a camera that captures impressive detail. This article covers the standout features of the Galaxy S23, from its display and build quality to its user interface, and provides a thorough comparison with competitors. We also discuss its battery life and real-world performance to help readers determine if this smartphone meets their needs.",
+    "image_url": "https://i.ibb.co.com/2g6KFpJ/image.png"
+  },
+  {
+    "id": 4,
+    "title": "Top Features of Dell XPS 13 You Need to Know",
+    "author": "Jhone",
+    "author_image": "https://i.ibb.co.com/x62NnY7/image.png",
+    "publish_date": "2024-10-10",
+    "category": "Laptop",
+    "tags": ["Dell", "XPS 13", "Laptop"],
+    "content_preview": "The Dell XPS 13 has long been a popular choice for professionals and students. Known for its nearly borderless InfinityEdge display and slim profile, it’s packed with Intel’s latest processors and is capable of handling a wide range of tasks. This post dives into the standout features that make the XPS 13 unique, including its battery life, display clarity, and build quality. We also explore its potential as a daily workhorse for remote work and travel.",
+    "image_url": "https://i.ibb.co.com/TbtPqyp/image.png"
+  },
+  {
+    "id": 5,
+    "title": "Google Pixel 7 Review: The Best of Android?",
+    "author": "Arafat Rhaman",
+    "author_image": "https://i.ibb.co.com/wJbvKzj/image.png",
+    "publish_date": "2024-09-28",
+    "category": "Smartphone",
+    "tags": ["Google", "Pixel 7", "Smartphone"],
+    "content_preview": "With the Pixel 7, Google aims to deliver a flagship smartphone experience that combines innovative camera features, a sleek design, and the latest Android experience. This review delves into the Pixel 7’s photography capabilities, software optimizations, and Google’s own AI-driven enhancements. We also compare the Pixel 7 with other leading Android devices and explore whether it offers the best value in today’s smartphone market.",
+    "image_url": "https://i.ibb.co.com/C2rQVXm/image.png"
+  }
+]
