@@ -2,7 +2,7 @@
   {
     "id": 1,
     "product_title": "Dell Inspiron 15",
-    "product_image": "https://i.ibb.co.com/kys3J9j/image.png",
+    "product_image": "https://i.ibb.co.com/Nnr4MxP/image.png",
     "category": "Laptops",
     "price": 650.0,
     "description": "15.6-inch laptop with a sleek design and powerful performance for everyday tasks.",
@@ -139,7 +139,7 @@
   {
     "id": 9,
     "product_title": "Lenovo ThinkPad X1 Carbon",
-    "product_image": "https://i.ibb.co.com/5cnBmKQ/image.png",
+    "product_image": "https://i.ibb.co.com/X24StRH/image.png",
     "category": "Laptops",
     "price": 1399.0,
     "description": "High-end business laptop with a durable build and top-notch performance.",
@@ -174,7 +174,7 @@
   {
     "id": 11,
     "product_title": "iPhone 13 Mini",
-    "product_image": "https://i.ibb.co.com/fX73S9x/image.png",
+    "product_image": "https://i.ibb.co.com/qJh3fJc/image.png",
     "category": "iPhones",
     "price": 699.0,
     "description": "Compact smartphone with powerful features and excellent camera quality.",
@@ -203,5 +203,71 @@
     ],
     "availability": "In Stock",
     "rating": 4.8
+  },
+
+  {
+    "id": 13,
+    "product_title": "Samsung Galaxy S23 Ultra",
+    "product_image": "https://i.ibb.co.com/QmZHxrQ/image.png",
+    "category": "Phones",
+    "price": 1199.0,
+    "description": "High-end Samsung phone with an advanced camera and S Pen support.",
+    "specification": [
+      "6.8 inches, Dynamic AMOLED",
+      "Snapdragon 8 Gen 2",
+      "12GB",
+      "512GB",
+      "5000mAh"
+    ],
+    "availability": "In Stock"
+  },
+  {
+    "id": 14,
+    "product_title": "Samsung Galaxy S22",
+    "product_image": "https://i.ibb.co.com/6RfCc8Y/image.png",
+    "category": "Phones",
+    "price": 699.0,
+    "description": "Previous generation Samsung Galaxy with excellent display and performance.",
+    "specification": [
+      "6.1 inches, Dynamic AMOLED",
+      "Snapdragon 8 Gen 1",
+      "8GB",
+      "128GB",
+      "3700mAh"
+    ],
+    "availability": "Out of Stock"
+  },
+
+  {
+    "id": 16,
+    "product_title": "Google Pixel 7 Pro",
+    "product_image": "https://i.ibb.co.com/7n90tQ3/image.png",
+    "category": "Phones",
+    "price": 899.0,
+    "description": "Google's latest phone with Tensor G2 chip and Pixel-exclusive features.",
+    "specification": [
+      "6.7 inches, LTPO OLED",
+      "Google Tensor G2",
+      "12GB",
+      "256GB",
+      "5000mAh"
+    ],
+    "availability": "In Stock"
+  },
+  {
+    "id": 17,
+    "product_title": "OnePlus 11",
+    "product_image": "https://i.ibb.co.com/ZzBdpzh/image.png",
+    "category": "Phones",
+    "price": 749.0,
+    "description": "Flagship OnePlus phone with fast charging and high-refresh-rate display.",
+    "specification": [
+      "6.7 inches, AMOLED",
+      "Snapdragon 8 Gen 2",
+      "16GB",
+      "256GB",
+      "5000mAh"
+    ],
+    "availability": "In Stock"
   }
 ]

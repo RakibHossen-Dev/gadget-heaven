@@ -1,4 +1,9 @@
+import { useEffect } from "react";
+
 const Statistics = () => {
+  useEffect(() => {
+    document.title = " Statistics| gedget heaven";
+  });
   return (
     <div>
       <div className="bg-violet-500 py-6 ">

@@ -42,7 +42,7 @@ const getWishList = () => {
 const addWhistList = (gadget) => {
   const addToWishList = getWishList();
   const isExist = addToWishList.find((item) => item.id === gadget.id);
-  if (isExist) return alert("Already Exist");
+  if (isExist) return;
   toast.success("Added New Item");
 
   console.log(addToWishList);

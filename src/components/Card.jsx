@@ -5,7 +5,7 @@ const Card = ({ gadgets }) => {
   return (
     <div className="bg-white shadow-lg rounded-lg p-3">
       <img
-        className="w-full lg:h-80  rounded-lg p-4"
+        className="w-full lg:h-72  rounded-lg p-4"
         src={product_image}
         alt=""
       />

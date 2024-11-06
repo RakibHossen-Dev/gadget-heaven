@@ -7,6 +7,7 @@ import GadgetCards from "../components/GadgetCards";
 import GadgetDetails from "../pages/GadgetDetails";
 import Blogs from "../pages/Blogs";
 import BlogDetails from "../components/BlogDetails";
+import NotFound from "../pages/NotFound";
 
 const routes = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const routes = createBrowserRouter([
       {
         path: "/dashboard",
         element: <Dashboard></Dashboard>,
+      },
+      {
+        path: "*",
+        element: <NotFound></NotFound>,
       },
 
       {

@@ -3,8 +3,13 @@ import { getAllCard, getWishList } from "../utils";
 import AddToCard from "../components/AddToCard";
 import AddToWishList from "../components/AddToWishList";
 import { useLoaderData, useNavigate } from "react-router-dom";
+import { VscSettings } from "react-icons/vsc";
 
 const Dashboard = () => {
+  useEffect(() => {
+    document.title = "Dashboard | gedget heaven";
+  });
+
   const data = useLoaderData();
   const [price, setPrice] = useState(0);
 
@@ -135,13 +140,14 @@ const Dashboard = () => {
               <h3 className="font-bold">Total cost: $ {price}</h3>
               <button
                 onClick={() => handleSort("price")}
-                className="border border-violet-500 py-2 px-5 text-violet-500 rounded-full"
+                className="border font-bold border-violet-500 py-2 px-5 text-violet-500 rounded-full flex items-center gap-2"
               >
                 Sort by Price
+                <VscSettings />
               </button>
               <button
                 onClick={openModal}
-                className="bg-violet-500 py-2 px-5 text-white rounded-full"
+                className="bg-violet-500 py-2 px-5 text-white rounded-full font-bold"
               >
                 Purchase
               </button>

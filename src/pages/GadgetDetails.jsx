@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import { LuShoppingCart } from "react-icons/lu";
 import { MdFavoriteBorder } from "react-icons/md";
-import { addCard, addWhistList, getAllCard } from "../utils";
+import { addCard, addWhistList, getAllCard, getWishList } from "../utils";
 import { toast } from "react-toastify";
 
 const GadgetDetails = () => {
@@ -13,17 +13,24 @@ const GadgetDetails = () => {
     addCard(card);
   };
 
-  const handleAddToWhishList = (whishList) => {
-    // console.log("Wish List", whishList);
-    addWhistList(whishList);
-  };
   const { id } = useParams();
   const [gadget, setGadget] = useState({});
+
+  const [isFavorite, setFavorite] = useState(false);
   useEffect(() => {
     const findGadget = allGadget.find((gadget) => gadget.id === parseInt(id));
     setGadget(findGadget);
+    const favorites = getWishList();
+    const isExist = favorites.find((item) => item.id === gadget.id);
+    if (isExist) {
+      setFavorite(true);
+    }
   }, [allGadget, id]);
 
+  const handleAddToWhishList = (whishList) => {
+    addWhistList(whishList);
+    setFavorite(true);
+  };
   const {
     product_image,
     product_title,
@@ -111,6 +118,7 @@ const GadgetDetails = () => {
               <LuShoppingCart />
             </button>
             <button
+              disabled={isFavorite}
               onClick={() => handleAddToWhishList(gadget)}
               className="bg-white shadow-sm rounded-full p-2 border text-lg"
             >

@@ -164,13 +164,6 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end flex gap-2">
-          {/* <Link className="border rounded-full p-2 text-lg">
-            <MdOutlineShoppingCart />
-            
-
-
-          </Link> */}
-
           <div className="dropdown dropdown-end">
             <div
               tabIndex={0}
@@ -202,13 +195,10 @@ const Navbar = () => {
               className="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow"
             >
               <div className="card-body">
-                <span className="text-lg font-bold">{card.length} Items</span>
-                <span className="text-info">Subtotal: $999</span>
-                <div className="card-actions">
-                  <button className="btn btn-primary btn-block">
-                    View cart
-                  </button>
-                </div>
+                <span className="text-lg font-bold text-gray-900">
+                  {card.length} Items
+                </span>
+                <div className="card-actions"></div>
               </div>
             </div>
           </div>
@@ -232,13 +222,10 @@ const Navbar = () => {
               className="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow"
             >
               <div className="card-body">
-                <span className="text-lg font-bold">{wish.length} Items</span>
-                <span className="text-info">Subtotal: $999</span>
-                <div className="card-actions">
-                  <button className="btn btn-primary btn-block">
-                    View cart
-                  </button>
-                </div>
+                <span className="text-lg font-bold text-gray-900">
+                  {wish.length} Items
+                </span>
+                <div className="card-actions"></div>
               </div>
             </div>
           </div>

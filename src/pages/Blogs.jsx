@@ -1,7 +1,11 @@
 import { useLoaderData } from "react-router-dom";
 import Blog from "../components/Blog";
+import { useEffect } from "react";
 
 const Blogs = () => {
+  useEffect(() => {
+    document.title = "Blog | gedget heaven";
+  });
   const data = useLoaderData();
   console.log(data);
   return (

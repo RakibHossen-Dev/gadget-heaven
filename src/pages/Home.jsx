@@ -1,8 +1,12 @@
-import { Outlet, useLoaderData } from "react-router-dom";
+import { Link, Outlet, useLoaderData } from "react-router-dom";
 import Categories from "../components/Categories";
+import { useEffect } from "react";
 // import "../assets/banner.jpg";
 
 const Home = () => {
+  useEffect(() => {
+    document.title = "Home | gedget heaven";
+  });
   const categories = useLoaderData();
   return (
     <div className="w-11/12  mx-auto">
@@ -11,14 +15,16 @@ const Home = () => {
           <h2 className="lg:text-5xl text-3xl font-bold text-white">
             Upgrade Your Tech Accessorize with Gadget Heaven Accessories
           </h2>
-          <p className="text-white w-9/12 mx-auto ">
+          <p className="text-white w-9/12 mx-auto pb-5">
             Explore the latest gadgets that will take your experience to the
             next level. From smart devices to the coolest accessories, we have
             it all!
           </p>
-          <button className="bg-white py-2 px-6 rounded-full font-bold ">
-            Shop Now
-          </button>
+          <Link to="/dashboard">
+            <button className="bg-white py-2 px-6 rounded-full font-bold ">
+              Shop Now
+            </button>
+          </Link>
         </div>
       </div>
       <div className="w-11/12 md:w-9/12 mx-auto border lg:p-4 p-1  rounded-md blur-bg relative -top-44 ">
