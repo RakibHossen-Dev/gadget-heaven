@@ -1,7 +1,6 @@
 import { Link, Outlet, useLoaderData } from "react-router-dom";
 import Categories from "../components/Categories";
 import { useEffect } from "react";
-// import "../assets/banner.jpg";
 
 const Home = () => {
   useEffect(() => {
@@ -15,7 +14,7 @@ const Home = () => {
           <h2 className="lg:text-5xl text-3xl font-bold text-white">
             Upgrade Your Tech Accessorize with Gadget Heaven Accessories
           </h2>
-          <p className="text-white w-9/12 mx-auto pb-5">
+          <p className="text-white lg:w-9/12 mx-auto pb-5">
             Explore the latest gadgets that will take your experience to the
             next level. From smart devices to the coolest accessories, we have
             it all!
@@ -27,7 +26,7 @@ const Home = () => {
           </Link>
         </div>
       </div>
-      <div className="w-11/12 md:w-9/12 mx-auto border lg:p-4 p-1  rounded-md blur-bg relative -top-44 ">
+      <div className="w-11/12 md:w-9/12 mx-auto border lg:p-4 p-1  rounded-md blur-bg relative md:-top-44 -top-32 ">
         <img
           className="rounded-xl lg:h-[450px] w-full"
           src="/banner.jpg"
@@ -39,7 +38,7 @@ const Home = () => {
         Explore Cutting-Edge Gadgets
       </h3>
       <div className="flex  lg:flex-row flex-col gap-6">
-        <div className="lg:w-1/5 bg-white flex flex-col gap-3 p-5 rounded-lg">
+        <div className="lg:w-1/5 h-full bg-white flex flex-col gap-3 p-5 rounded-lg">
           {/* daynamic */}
           <Categories categories={categories}></Categories>
         </div>

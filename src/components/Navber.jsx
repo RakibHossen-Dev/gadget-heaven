@@ -18,7 +18,6 @@ const Navbar = () => {
     setWish(addToWish);
   }, []);
 
-  // console.log("fgjhfgkjhfhg", card.length);
   return (
     <div
       className={`w-11/12 mx-auto py-4  ${
@@ -31,7 +30,7 @@ const Navbar = () => {
           "/category/MacBooks",
           "/category/iPhones",
         ].includes(pathname) &&
-        "bg-violet-500 rounded-t-xl text-white mt-5 px-5"
+        "bg-violet-500 rounded-t-xl text-white mt-5 lg:px-5"
       }`}
     >
       <div className="navbar">

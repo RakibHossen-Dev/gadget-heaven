@@ -50,11 +50,6 @@ const Dashboard = () => {
   // Modal
 
   const navigate = useNavigate();
-  // const handleGoBack = () => {
-  //   // navigate("/");
-  //   setCard([]);
-  //   localStorage.setItem("card", JSON.stringify([]));
-  // };
 
   const openModal = () => {
     document.getElementById("my_modal_1").showModal();
@@ -72,7 +67,7 @@ const Dashboard = () => {
       <div className="bg-violet-500 py-6 ">
         <div className="text-center ">
           <h3 className="text-3xl font-bold text-white">Dashboard </h3>
-          <p className="text-white w-1/2 mx-auto mt-2">
+          <p className="text-white w-11/12 md:w-1/2 mx-auto mt-2">
             Explore the latest gadgets that will take your experience to the
             next level. From smart devices to the coolest accessories, we have
             it all!
@@ -103,12 +98,6 @@ const Dashboard = () => {
       </div>
 
       {/* Mdaol */}
-      {/* <button
-        className="btn"
-        onClick={() => document.getElementById("my_modal_1").showModal()}
-      >
-        open modal
-      </button> */}
 
       <dialog id="my_modal_1" className="modal">
         <div className="modal-box flex flex-col justify-center items-center ">
@@ -118,7 +107,6 @@ const Dashboard = () => {
           <p>Total: ${price}</p>
           <div className="modal-action">
             <form method="dialog">
-              {/* if there is a button in form, it will close the modal */}
               <button
                 onClick={goTohome}
                 className="bg-violet-500 py-2 w-48 text-white rounded-xl"
@@ -130,13 +118,12 @@ const Dashboard = () => {
         </div>
       </dialog>
       {/* Mdaol */}
-      {/* gkhofghogifuh */}
 
       {isActive ? (
         <div>
-          <div className="lg:w-9/12 mx-auto flex justify-between items-center my-5">
+          <div className="md:w-9/12 mx-auto flex md:flex-row flex-col justify-between items-center my-5">
             <h2 className="text-2xl font-bold">Cart</h2>
-            <div className="flex items-center gap-3">
+            <div className="flex md:flex-row flex-col items-center gap-3">
               <h3 className="font-bold">Total cost: $ {price}</h3>
               <button
                 onClick={() => handleSort("price")}
@@ -159,7 +146,7 @@ const Dashboard = () => {
         </div>
       ) : (
         <div>
-          <div className="lg:w-9/12 mx-auto mt-2">
+          <div className="md:w-9/12 w-11/12 mx-auto mt-2">
             <h2 className="text-2xl font-bold">Wish list</h2>
           </div>
           {wish.map((item, idx) => (
