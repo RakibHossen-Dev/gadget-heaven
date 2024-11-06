@@ -1,12 +1,12 @@
 import { Outlet, useLoaderData } from "react-router-dom";
 import Categories from "../components/Categories";
-import "../assets/banner.jpg";
+// import "../assets/banner.jpg";
 
 const Home = () => {
   const categories = useLoaderData();
   return (
     <div className="w-11/12  mx-auto">
-      <div className="bg-violet-500 pt-7   pb-56 rounded-xl">
+      <div className="bg-violet-500 pt-7   pb-56 rounded-b-xl">
         <div className="  text-center w-11/12 lg:w-9/12 mx-auto lg:space-y-7 space-y-3">
           <h2 className="lg:text-5xl text-3xl font-bold text-white">
             Upgrade Your Tech Accessorize with Gadget Heaven Accessories
@@ -24,7 +24,7 @@ const Home = () => {
       <div className="w-11/12 md:w-9/12 mx-auto border lg:p-4 p-1  rounded-md blur-bg relative -top-44 ">
         <img
           className="rounded-xl lg:h-[450px] w-full"
-          src="/src/assets/banner.jpg"
+          src="/banner.jpg"
           alt=""
         />
       </div>

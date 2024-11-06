@@ -7,6 +7,7 @@ import { useLoaderData, useNavigate } from "react-router-dom";
 const Dashboard = () => {
   const data = useLoaderData();
   const [price, setPrice] = useState(0);
+
   const [card, setCard] = useState([]);
   useEffect(() => {
     const addToCard = getAllCard();
@@ -39,12 +40,28 @@ const Dashboard = () => {
     }
   };
 
+  // Modal
+
+  // Modal
+
   const navigate = useNavigate();
-  const handleGoBack = () => {
+  // const handleGoBack = () => {
+  //   // navigate("/");
+  //   setCard([]);
+  //   localStorage.setItem("card", JSON.stringify([]));
+  // };
+
+  const openModal = () => {
+    document.getElementById("my_modal_1").showModal();
+    // handleGoBack();
+  };
+
+  const goTohome = () => {
     navigate("/");
     setCard([]);
     localStorage.setItem("card", JSON.stringify([]));
   };
+
   return (
     <div>
       <div className="bg-violet-500 py-6 ">
@@ -79,6 +96,35 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
+
+      {/* Mdaol */}
+      {/* <button
+        className="btn"
+        onClick={() => document.getElementById("my_modal_1").showModal()}
+      >
+        open modal
+      </button> */}
+
+      <dialog id="my_modal_1" className="modal">
+        <div className="modal-box flex flex-col justify-center items-center ">
+          <img className="mb-4" src="/Group.png" alt="" />
+          <h3 className="font-bold text-2xl">Payment Successfully </h3>
+          <p className="pt-4 pb-2">Thanks for purchasing.</p>
+          <p>Total: ${price}</p>
+          <div className="modal-action">
+            <form method="dialog">
+              {/* if there is a button in form, it will close the modal */}
+              <button
+                onClick={goTohome}
+                className="bg-violet-500 py-2 w-48 text-white rounded-xl"
+              >
+                Close
+              </button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+      {/* Mdaol */}
       {/* gkhofghogifuh */}
 
       {isActive ? (
@@ -94,7 +140,7 @@ const Dashboard = () => {
                 Sort by Price
               </button>
               <button
-                onClick={handleGoBack}
+                onClick={openModal}
                 className="bg-violet-500 py-2 px-5 text-white rounded-full"
               >
                 Purchase

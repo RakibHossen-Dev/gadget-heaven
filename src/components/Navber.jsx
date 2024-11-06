@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { MdFavoriteBorder } from "react-icons/md";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { getAllCard, getWishList } from "../utils";
 const Navbar = () => {
+  const { pathname } = useLocation();
+  console.log(pathname);
   const [card, setCard] = useState([]);
   useEffect(() => {
     const addToCard = getAllCard();
@@ -18,8 +20,21 @@ const Navbar = () => {
 
   // console.log("fgjhfgkjhfhg", card.length);
   return (
-    <div className="w-11/12 mx-auto py-4">
-      <div className="navbar bg-base-100">
+    <div
+      className={`w-11/12 mx-auto py-4  ${
+        [
+          "/",
+          "/category/Phones",
+          "/category/Laptops",
+          "/category/Accessories",
+          "/category/Smartwatches",
+          "/category/MacBooks",
+          "/category/iPhones",
+        ].includes(pathname) &&
+        "bg-violet-500 rounded-t-xl text-white mt-5 px-5"
+      }`}
+    >
+      <div className="navbar">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -40,13 +55,13 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow gap-2"
+              className="menu menu-sm dropdown-content text-gray-800 bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow gap-2"
             >
               <NavLink
                 className={({ isActive }) =>
                   `${
                     isActive
-                      ? "border border-violet-500 text-violet-500 py-1 px-4 rounded-md"
+                      ? "border border-violet-500  py-1 px-4 rounded-md"
                       : ""
                   }`
                 }
@@ -102,7 +117,7 @@ const Navbar = () => {
               className={({ isActive }) =>
                 `${
                   isActive
-                    ? "border border-violet-500 text-violet-500 py-1 px-4 rounded-md"
+                    ? "border border-violet-500 text-white py-1 px-4 rounded-md"
                     : "py-1 px-5"
                 }`
               }
